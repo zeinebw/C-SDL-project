@@ -1,0 +1,13 @@
+#include <SDL/SDL.h>
+#include <stdlib.h>
+#include <stdio.h>
+fic=fopen("fichiert.txt","r");
+if (fic==NULL)
+{printf ("FICHIER NON OUVERT");
+exit(1);}
+else {
+fprintf (fic,"%s",question1);
+fprintf (fic,"%s",rep1);
+fprintf (fic,"%s",rep2);
+fprintf (fic,"%s",rep3);}
+fclose(fic);

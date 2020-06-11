@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="400"
+   height="360"
+   id="svg2">
+  <defs
+     id="defs4">
+    <linearGradient
+       x1="92.604424"
+       y1="304.50995"
+       x2="263.82959"
+       y2="26.290426"
+       id="linearGradient3199"
+       xlink:href="#linearGradient2889"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient2889">
+      <stop
+         style="stop-color:#f03a31;stop-opacity:1"
+         offset="0"
+         id="stop2891" />
+      <stop
+         style="stop-color:#de475e;stop-opacity:1"
+         offset="1"
+         id="stop2893" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1">
+    <path
+       d="M 374 169 A 190 152 0 1 1  -6,169 A 190 152 0 1 1  374 169 z"
+       transform="matrix(0.851641,-0.524127,0.524127,0.851641,-45.27941,132.512)"
+       style="fill:url(#linearGradient3199);fill-opacity:1;stroke:none;stroke-width:3.125;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path2869" />
+    <use
+       transform="translate(20.00003,19.99957)"
+       style="opacity:0.3"
+       id="use2837"
+       x="0"
+       y="0"
+       width="400"
+       height="360"
+       xlink:href="#check" />
+    <path
+       d="M 114.70915,283.18543 L 153.73106,283.18543 C 170.06581,233.27368 233.58985,114.11621 288.03903,72.371824 C 299.32031,57.867319 270.98001,51.880175 248.10964,61.481986 C 213.64062,75.953336 105.63428,262.31324 114.70915,283.18543 z M 138.19814,67.34749 L 98.19814,67.34749 C 94.662606,73.39175 225.26736,224.20628 267.01175,278.65548 C 281.51625,289.93676 287.5034,261.59644 277.90158,238.72607 C 263.43023,204.25705 155.37363,99.657396 138.19814,67.34749 z "
+       style="fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="check" />
+  </g>
+</svg>
