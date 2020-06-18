@@ -6,9 +6,16 @@
 #include "SDL/SDL_ttf.h"
 #include "enigme.h"
 #include <time.h>
+/**
+* @file enigme.c
+* @brief resolution enigme
+* @param e  struct enigme 
+*@param event evenement
+*@return 1 if true
+*/
 
-int resolutionEnigme(enigmeg pe,enigme ed, SDL_Event event){
-SDL_Surface *back = NULL, *imageo = NULL, *imagen = NULL; 
+int resolutionEnigme(enigme e, SDL_Event event){
+SDL_Surface *fond = NULL, *imageo = NULL, *imagen = NULL; 
 SDL_Rect positionimageo, positionimagen,positionclic;
 imageo=IMG_Load("ouii.png");
 imagen=IMG_Load("no.svg");
@@ -60,7 +67,13 @@ SDL_FreeSurface(imagen);
 return 0;
 }
 
+/**
+* @brief initialisation enigme
+* @param *e  struct enigme 
+*@return nothing
+*/
 void initEnigme (enigme *e){
+SDL_Surface *imageo = NULL, *imagen = NULL; 
   e->f = fopen("enigme.txt", "r");
  e->fond = IMG_Load("lettre.gif");
 e->pr1.x=0;
@@ -80,30 +93,38 @@ e->positionimagen.y=0;
 imageo=IMG_Load("ouii.png");
 imagen=IMG_Load("no.svg");
 }
+/**
+* @brief random function
+*@return entier 
+*/
 
-int random()
+/*int random()
    {
   int pos;
   srand(time(NULL));
   pos=rand()%(9-1+1)+0;
   return pos;
     }
-
+/**
+* @brief generer enigme
+* @param e  struct enigme 
+*@return struct enigme
+*/
 
 enigme genererEnigme(enigme e){
-  enigme e[10];
+  enigme eee[10];
   int i;
   int pos = random();
   for (i = 0; i < 10; i++) {
    // fscanf(e.f,"*%d)%s",i,ed[i].quest);
-    fgets(e[i].quest, 400, e.f);
-    fscanf(e.f,"a.%s b.%s c.%s v.%s\n",e[i].r1, e[i].r2, e[i].r3, e[i].v);
+    fgets(ee[i].quest, 400, e.f);
+    fscanf(e.f,"a.%s b.%s c.%s v.%s\n",eee[i].r1, eee[i].r2, eee[i].r3, eee[i].v);
   }   
-  strcpy(e.quest,e[pos].quest);
-  strcpy (e.r1 ,e[pos].r1);
-  strcpy(e.r2 ,e[pos].r2);
-  strcpy(e.r3 ,e[pos].r3);
-  strcpy(e.v ,e[pos].v);
+  strcpy(e.quest,eee[pos].quest);
+  strcpy (e.r1 ,eee[pos].r1);
+  strcpy(e.r2 ,eee[pos].r2);
+  strcpy(e.r3 ,eee[pos].r3);
+  strcpy(e.v ,eee[pos].v);
   return e;
     }
 

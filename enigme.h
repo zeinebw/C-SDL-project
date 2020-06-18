@@ -30,8 +30,8 @@ SDL_Rect positionimagen;
 
 
 void initEnigme (enigme *e);
-enigmeg genererEnigme(enigme e);
+enigme genererEnigme(enigme e);
 void afficherEnigme(enigme e, SDL_Surface *screen);
-int random();
+//int random();
 int resolutionEnigme(enigme e, SDL_Event event);
 #endif 

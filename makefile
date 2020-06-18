@@ -1,6 +1,10 @@
-prog:fonctions.o main.o
-gcc fonctions.o main.o -o prog
-main.o:main.c
-gcc -c main.c
-fonctions.o:fonctions.c
-gcc -c fonctions.c
+
+
+
+all : prog clean
+prog : main.o ajoutconditions.o
+	@echo "building..."
+	gcc main.c  ajoutconditions.c   -o prog  -lSDL -lSDL_image -lSDL_mixer -lSDL_ttf
+clean:
+	@echo "cleaning up..."
+	rm *.o

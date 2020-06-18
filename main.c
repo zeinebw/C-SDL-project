@@ -15,12 +15,12 @@ return 1;
 }
 screen=SDL_SetVideoMode(1029,795,32,SDL_HWSURFACE|SDL_DOUBLEBUF);
 enigme e;
-enigmeg ee;
+enigme ee;
 while ((coeur >0)&&(i==0))
 {
 initEnigme (&e);
 ee=genererEnigme(e);
-afficherEnigme(ee,&screen,e);
+//afficherEnigme(ee,&screen,e);
 i=resolutionEnigme(ee,event);
 coeur--;
 }

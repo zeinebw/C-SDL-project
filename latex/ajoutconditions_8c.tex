@@ -1,0 +1,162 @@
+\hypertarget{ajoutconditions_8c}{}\section{ajoutconditions.\+c File Reference}
+\label{ajoutconditions_8c}\index{ajoutconditions.\+c@{ajoutconditions.\+c}}
+
+
+ajouter conditions  
+
+
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\\*
+Include dependency graph for ajoutconditions.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{ajoutconditions_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structperso}{perso}
+\item 
+struct \hyperlink{structcamera}{camera}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structperso}{perso} {\bfseries perso}\hypertarget{ajoutconditions_8c_a1c7a32a9b48d6f089882757a219edf09}{}\label{ajoutconditions_8c_a1c7a32a9b48d6f089882757a219edf09}
+
+\item 
+typedef struct \hyperlink{structcamera}{camera} {\bfseries camera}\hypertarget{ajoutconditions_8c_ae26b36add9a7cd89501e76cd66317f5c}{}\label{ajoutconditions_8c_ae26b36add9a7cd89501e76cd66317f5c}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries ajoutconditions} (int vie, int coeur, int niveau, int score, S\+D\+L\+\_\+\+Surface $\ast$ecran)\hypertarget{ajoutconditions_8c_a934514ef2c799fb64861419047f1aefb}{}\label{ajoutconditions_8c_a934514ef2c799fb64861419047f1aefb}
+
+\item 
+void \hyperlink{ajoutconditions_8c_ad0b3e665125a6aaf7ce1cdb425941845}{initialiserpersos} (\hyperlink{structperso}{perso} $\ast$p)
+\begin{DoxyCompactList}\small\item\em initialiser personnage \end{DoxyCompactList}\item 
+void \hyperlink{ajoutconditions_8c_a675a6d1471d4fc75b830c83b08434d01}{initialiserpersof} (\hyperlink{structperso}{perso} $\ast$p)
+\begin{DoxyCompactList}\small\item\em initialiser personnage \end{DoxyCompactList}\item 
+void \hyperlink{ajoutconditions_8c_afec174ec74fa4a1e39000b472eb8a2c7}{ajoutpersonnage} (\hyperlink{structperso}{perso} $\ast$p)
+\begin{DoxyCompactList}\small\item\em ajouter personnage \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ajouter conditions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entier} & vie \\
+\hline
+{\em entier} & coeur \\
+\hline
+{\em entier} & niveau \\
+\hline
+{\em entier} & score \\
+\hline
+{\em ecran} & image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+\subsection{Function Documentation}
+\index{ajoutconditions.\+c@{ajoutconditions.\+c}!ajoutpersonnage@{ajoutpersonnage}}
+\index{ajoutpersonnage@{ajoutpersonnage}!ajoutconditions.\+c@{ajoutconditions.\+c}}
+\subsubsection[{\texorpdfstring{ajoutpersonnage(perso $\ast$p)}{ajoutpersonnage(perso *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajoutpersonnage (
+\begin{DoxyParamCaption}
+\item[{{\bf perso} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{ajoutconditions_8c_afec174ec74fa4a1e39000b472eb8a2c7}{}\label{ajoutconditions_8c_afec174ec74fa4a1e39000b472eb8a2c7}
+
+
+ajouter personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & perso \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{ajoutconditions_8c_afec174ec74fa4a1e39000b472eb8a2c7_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{ajoutconditions.\+c@{ajoutconditions.\+c}!initialiserpersof@{initialiserpersof}}
+\index{initialiserpersof@{initialiserpersof}!ajoutconditions.\+c@{ajoutconditions.\+c}}
+\subsubsection[{\texorpdfstring{initialiserpersof(perso $\ast$p)}{initialiserpersof(perso *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void initialiserpersof (
+\begin{DoxyParamCaption}
+\item[{{\bf perso} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{ajoutconditions_8c_a675a6d1471d4fc75b830c83b08434d01}{}\label{ajoutconditions_8c_a675a6d1471d4fc75b830c83b08434d01}
+
+
+initialiser personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & perso \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{ajoutconditions_8c_a675a6d1471d4fc75b830c83b08434d01_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ajoutconditions.\+c@{ajoutconditions.\+c}!initialiserpersos@{initialiserpersos}}
+\index{initialiserpersos@{initialiserpersos}!ajoutconditions.\+c@{ajoutconditions.\+c}}
+\subsubsection[{\texorpdfstring{initialiserpersos(perso $\ast$p)}{initialiserpersos(perso *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void initialiserpersos (
+\begin{DoxyParamCaption}
+\item[{{\bf perso} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{ajoutconditions_8c_ad0b3e665125a6aaf7ce1cdb425941845}{}\label{ajoutconditions_8c_ad0b3e665125a6aaf7ce1cdb425941845}
+
+
+initialiser personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & perso \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{ajoutconditions_8c_ad0b3e665125a6aaf7ce1cdb425941845_icgraph}
+\end{center}
+\end{figure}
+
+
